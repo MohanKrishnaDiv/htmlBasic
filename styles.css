@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+} 
+
+body{
+    width: 100vw;
+}
+
+.Head{
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    background-color: black;
+}
+.screen{
+    display: flex;
+    color: aliceblue;
+    background-color: black;
+}
+.items{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: black;
+}
+.items:hover{
+    background-color: rgb(126, 153, 183);
+    cursor: pointer;
+}
+.items div{
+    margin: 5px;
+    
+}
+.side1{  
+    background-color: black; 
+    width: 15%;
+    overflow-y: scroll;
+    height: calc(100vh - 40px) ;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.side1::-webkit-scrollbar{
+    display: none;
+}
+.top::-webkit-scrollbar{
+    display: none;
+}
+
+.side1::-webkit-scrollbar {
+    background: lightgray;
+    width: 8px;
+    border-radius: 20px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    overflow-x: scroll;
+    
+
+}
+.top div{
+    border-radius: 10px;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(49, 54, 54);
+    white-space: nowrap;
+
+}
+.top div:hover{
+    background-color: rgb(113, 93, 33);
+    cursor: pointer;
+}
+.sides{
+    border-bottom: 1px solid rgb(245, 132, 132);
+    padding: 10px;
+}
+#logo,#search,#notify{
+    display: flex;
+    align-items: center;
+    
+}
+.side2{
+    width: 85%;
+}
+.bottom{
+    display: flex; 
+    flex-wrap: wrap;          
+    padding: 20px;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: calc(100vh - 122px);
+            
+}
+.bottom div{
+    padding: 20px;   
+}
+.bottom div figure a img{
+    height: 150px;
+    width: 280px;
+}
+.bottom div figure:hover{
+   transform: scale(1.2);
+}
+.Head input:focus{
+    background-color: rgb(237, 116, 116);
+}
+.top div:first-child{
+    color: rgb(169, 99, 9);
+}
+.top div:nth-child(4){
+    color: rgb(109, 122, 7);
+}
+.items div:active{
+    background-color: rgb(21, 224, 21);
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+}
+#srr{
+    border-radius:0px 12px 12px 0px;
+}
+@media (min-width:768px){
+    .foot{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:1070px){
+    
+    .bottom div figure a img{
+        height: 150px;
+        width: 35vw;
+        justify-content: space-around;
+    }  
+
+}
+
+
+@media all and (max-width:768px){
+    .side1{
+        display: none;
+    }
+    .bottom{
+        width: 110%;
+    }
+    .top{
+        width: calc(100vw);
+    }
+    #sr{
+        display: none;
+    }
+    #srr{
+        border-radius: 5px;
+    }
+    .Head div{
+        display: flex;
+    }
+    .foot img{
+        width: 100vw;
+        position: fixed;
+        bottom: 0px;
+        height: 40px;
+    
+    }
+}
+@media (max-width:685px){
+    .bottom div figure a img{
+        height: 150px;
+        width: 40vw;
+    }  
+}
+@media (max-width:621px){
+    .bottom div figure a img{
+        height: 200px;
+        width: 80vw;
+        padding-left: 5px;
+    }  
+}
